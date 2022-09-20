@@ -1,0 +1,42 @@
+* { 
+	box-sizing: border-box;
+}
+html, body {
+	min-height: 100%;
+	background: #fff;
+	color: #000;
+}
+body {
+	font-size: 1.4rem;
+}
+.header{
+    display: flex;
+    justify-content: center;
+}
+
+.buttoncenter{
+	display: flex;
+	justify-content: center;
+	padding-bottom: 3rem;
+}
+
+.boardcontainer{
+	width: 310px;
+	height: 310px;
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	margin: 0 auto;
+}
+.cell{
+	height: 100px;
+	width: 100px;
+	background-color: antiquewhite;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.cell:hover{
+	background-color: grey;
+	cursor: pointer;
+}
