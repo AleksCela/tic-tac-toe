@@ -15,11 +15,11 @@ const gameBoard = (() => {
 
     //display the cells
     let boardcontainer = document.querySelector('.boardcontainer');
-    board.forEach((item, index) => {
+    board.forEach(item => {
         const cell = document.createElement('div');
         cell.className = 'cell';
-        boardcontainer.appendChild(cell);
         cell.innerText=item;
+        boardcontainer.appendChild(cell);
     })
 
 
